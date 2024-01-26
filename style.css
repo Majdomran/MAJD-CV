@@ -1,0 +1,260 @@
+/* Allmän styling för hela dokumentet */
+body {
+    background-color: white;
+    margin: 0;
+    display: box; /* Bör kanske vara "display: flex;" eller "display: grid;" beroende på önskat beteende */
+}
+
+/* Header-sektion */
+.h1 {
+    background-color: #274472;
+    color: white;
+    font-size: 156px;
+    padding: 10px;
+}
+
+.header {
+    display: flexbox; /* Borde vara "display: flex;" för att använda flexbox */
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 220px;
+}
+
+/* Bakgrundssektion */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #274472;
+}
+
+/* Profilbild och kontaktinformation-sektion */
+.bild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font: bold; /* Ej giltig CSS-egenskap */
+}
+
+/* Box-sektion för olika kategorier (Arbetslivserfarenhet, Utbildning, Övriga Kunskaper) */
+.box {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.left {
+    background-color: #274472;
+    left: 27%;
+}
+
+.center {
+    background-color: #274472;
+    left: 52%;
+}
+
+.right {
+    background-color: #274472;
+    right: 1%;
+}
+
+/* Box-sektion för Referenser */
+.boxdown {
+    width: 1070px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #274472;
+    left: 52%;
+    top: 100%;
+}
+
+/* Sidoinformation */
+.side {
+    text-indent: 5px;
+    font-size: large;
+}
+
+/* Stil för "Om Mig"-länken */
+.mig {
+    width: 80px;
+    height: 50px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* Länkstil */
+a {
+    text-decoration: none;
+    color: white;
+    font: bold; /* Ej giltig CSS-egenskap */
+}
+
+/* Sektion för personlig information och beskrivning */
+.ommig {
+    width: 1070px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 60px;
+    background-color: #274472;
+    left: 52%;
+    top: 60%;
+    font-size: xx-large;
+}
+
+/* Arbetslivserfarenhetssektion */
+.arbets {
+    width: 1000px;
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: xx-large;
+}
+
+.upe {
+    background-color: #274472;
+    left: 50%;
+    top: 60%;
+}
+
+.nere {
+    background-color: #274472;
+    left: 50%;
+    top: 100%;
+}
+
+/* Hemlänk */
+.hemma {
+    left: 50%;
+    top: 35%;
+    font-size: medium;
+    width: 100px;
+    height: 45px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #274472;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Utbildningssektion */
+.utbildning {
+    width: 1000px;
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: xx-large;
+    background-color: #274472;
+    left: 50%;
+}
+
+/* Övriga Kunskaper-sektion */
+.övriga {
+    width: 1000px;
+    height: 400px;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: xx-large;
+    background-color: #274472;
+    left: 50%;
+}
+
+/* Referenssektioner */
+.ref {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+/* Stil för vänster referens */
+.vänster {
+    background-color: #274472;
+    left: 27%;
+    text-align: left;
+}
+
+/* Stil för mitten referens */
+.mitten {
+    background-color: #274472;
+    left: 52%;
+    text-align: left;
+}
+
+/* Stil för höger referens */
+.höger {
+    background-color: #274472;
+    right: 1%;
+    text-align: left;
+}
